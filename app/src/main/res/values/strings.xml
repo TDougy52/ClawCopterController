@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Claw Copter UI Controller</string>
+    <string-array name="mode_view">
+        <item>Flight Mode</item>
+        <item>Claw Mode</item>
+        <item>Both</item>
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.tony.clawcopteruicontroller.FlightActivity" android:baselineAligned="false">
+
+    <WebView
+        android:id="@+id/surroundCam"
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:id="@+id/controlColumn"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ModeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:minWidth="250dp"
+            android:padding="1dp"
+            android:text="To Claw Mode" />
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/PitchHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pitch" />
+
+            <RadioButton
+                android:id="@+id/PitchLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/RollHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Roll" />
+
+            <RadioButton
+                android:id="@+id/RollLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/YawHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Yaw" />
+
+            <RadioButton
+                android:id="@+id/YawLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow>
+
+            <RadioButton
+                android:id="@+id/ThrottleHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Throttle" />
+
+            <RadioButton
+                android:id="@+id/ThrottleLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Throttle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </View>
+
+    </TableLayout>
+</LinearLayout>
